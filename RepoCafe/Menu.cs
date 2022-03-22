@@ -6,10 +6,22 @@ using System.Threading.Tasks;
 
 namespace RepoCafe
 {
-    internal class Menu
+
+    public class Menu
     {
-        static void Main(string[] args)
+        public Menu() { }
+        public int ItemNumber { get; set; }
+        public string Name { get; set; }
+        public string Desc { get; set; }
+        public string Ingredients { get; set; }
+        public string Price { get; set; }
+        public Menu(int itemNumber, string name, string desc, string ingredients, string price)
         {
+            ItemNumber = itemNumber;
+            Name = name;
+            Desc = desc;
+            Ingredients = ingredients;
+            Price = price;
         }
     }
 }

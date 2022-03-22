@@ -50,5 +50,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RepoCafe\RepoCafe.csproj">
+      <Project>{6280FC68-DD06-42D7-9BAB-DD9A652BE53A}</Project>
+      <Name>RepoCafe</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
