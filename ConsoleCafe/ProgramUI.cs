@@ -58,7 +58,7 @@ namespace ConsoleCafe
                 Console.WriteLine($"#{content.ItemNumber} {content.Name}\n" +
                     $"Description: {content.Desc}\n" +
                     $"Ingredients: {content.Ingredients}\n" +
-                    $"Price:{content.Price}\n");
+                    $"Price:${content.Price}\n");
             }
             Console.WriteLine("Press ENTER Key To Continue.");
             Console.ReadKey();
@@ -106,7 +106,7 @@ namespace ConsoleCafe
 
             Console.Clear();
             Console.WriteLine($"Enter The New Price Of The {content.Name}:" + $" Example $2.00");
-            content.Price = Console.ReadLine();
+            content.Price = decimal.Parse(Console.ReadLine());
             Console.WriteLine(" ");
 
             Console.WriteLine("Here Is A Look At Your Order Summary:\n");
@@ -115,7 +115,7 @@ namespace ConsoleCafe
                 $"Item Name: {content.Name}\n" +
                 $"Item Description: {content.Desc}\n" +
                 $"Item Ingrediants: {content.Ingredients}\n" +
-                $"Item Price: {content.Price}\n");
+                $"Item Price: ${content.Price}\n");
 
             Console.WriteLine("Press The ENTER Key To Confirm Your Order.");
             Console.ReadKey();
@@ -146,9 +146,9 @@ namespace ConsoleCafe
         }
         public void SeedContent()
         {
-            Menu chickenSoup = new Menu(1, "Chicken Soup", "A Delightful Chicken Soup", "Chicken, Chicken Stock, Noodles", "$2.50");
-            Menu breakfastSandwich = new Menu(2, "Breakfast Sandwich", "A Warm Breakfast Sandwich On A Bagel", "Bagel, Eggs, Bacon, Tomato, Mayo", "$5.00");
-            Menu freshSalad = new Menu(3, "Fresh Salad", "A Light Cesar Salad.", "Salad Mix, Parmesan Cheese, Croutons, Red Wine Vinegar", "$6.50");
+            Menu chickenSoup = new Menu(1, "Chicken Soup", "A Delightful Chicken Soup", "Chicken, Chicken Stock, Noodles", 4.50m);
+            Menu breakfastSandwich = new Menu(2, "Breakfast Sandwich", "A Warm Breakfast Sandwich On A Bagel", "Bagel, Eggs, Bacon, Tomato, Mayo", 5.00m);
+            Menu freshSalad = new Menu(3, "Fresh Salad", "A Light Cesar Salad.", "Salad Mix, Parmesan Cheese, Croutons, Red Wine Vinegar", 6.50m);
 
             _orderRepo.AddOrder(chickenSoup);
             _orderRepo.AddOrder(breakfastSandwich);

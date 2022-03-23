@@ -13,7 +13,7 @@ namespace TestCafe
         public void Initialize()
         {
             _contentRepo = new Repository();
-            _content = new Menu(5, "Chicken Soup", "A Delightful Soup", "Chicken Noodles, Broth", "$3.50");
+            _content = new Menu(5, "Chicken Soup", "A Delightful Soup", "Chicken Noodles, Broth", 3.50m);
         }
         [TestMethod]
         public void AddContentToList()
@@ -34,7 +34,7 @@ namespace TestCafe
         [TestMethod]
         public void POCOTest()
         {
-            Menu neworder = new Menu(1, "Chicken Soup", "A Delightful Soup", "Chicken Noodles, Broth", "$3.50");
+            Menu neworder = new Menu(1, "Chicken Soup", "A Delightful Soup", "Chicken Noodles, Broth", 3.50m);
 
             Assert.AreEqual(1, neworder.ItemNumber);
             Assert.AreEqual("Chicken Soup", neworder.Name);
@@ -42,7 +42,7 @@ namespace TestCafe
             Assert.AreEqual("Chicken Noodles, Broth", neworder.Ingredients);
             Assert.AreEqual("$3.50", neworder.Price);
 
-            Menu neworder2 = new Menu(1, "Stew", "Hot & Spicy", "Tofu, Broth", "$5.00");
+            Menu neworder2 = new Menu(1, "Stew", "Hot & Spicy", "Tofu, Broth", 5.00m);
 
             Assert.AreEqual(1, neworder2.ItemNumber);
             Assert.AreEqual("Stew", neworder2.Name);

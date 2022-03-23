@@ -14,8 +14,8 @@ namespace RepoCafe
         public string Name { get; set; }
         public string Desc { get; set; }
         public string Ingredients { get; set; }
-        public string Price { get; set; }
-        public Menu(int itemNumber, string name, string desc, string ingredients, string price)
+        public decimal Price { get; set; }
+        public Menu(int itemNumber, string name, string desc, string ingredients, decimal price)
         {
             ItemNumber = itemNumber;
             Name = name;
