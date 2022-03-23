@@ -25,9 +25,9 @@ namespace ConsoleCafe
                     "\n" +
                     "Please Enter A Number From The List Below To Start Navigating The Menu.\n" +
                     "\n" +
-                    "1. Items On The Menu. . . \n" +
-                    "2. Create An Order. . . \n" +
-                    "3. Remove An Order. . . \n");
+                    "1. Items On The Menu. \n" +
+                    "2. Create An Order. \n" +
+                    "3. Remove An Order.\n");
 
                 string userInput = Console.ReadLine();
                 switch (userInput)
@@ -42,7 +42,7 @@ namespace ConsoleCafe
                         RemoveOrderFromList();
                         break;
                     default:
-                        Console.WriteLine("That Is Not A Valid Input");
+                        Console.WriteLine("That Is Not A Valid Input.");
                         Console.ReadKey();
                         Console.Clear();
                         break;
@@ -60,7 +60,7 @@ namespace ConsoleCafe
                     $"Ingredients: {content.Ingredients}\n" +
                     $"Price:{content.Price}\n");
             }
-            Console.WriteLine("Press ENTER Key To Continue...");
+            Console.WriteLine("Press ENTER Key To Continue.");
             Console.ReadKey();
             Console.Clear();
         }
@@ -117,12 +117,12 @@ namespace ConsoleCafe
                 $"Item Ingrediants: {content.Ingredients}\n" +
                 $"Item Price: {content.Price}\n");
 
-            Console.WriteLine("Press The ENTER Key To Confirm Your Order");
+            Console.WriteLine("Press The ENTER Key To Confirm Your Order.");
             Console.ReadKey();
 
             Console.Clear();
             Console.WriteLine("Order Successfully Added To The Menu.\n" + "\n" +
-                "Press The ENTER Key To Continue...");
+                "Press The ENTER Key To Continue.");
             Console.ReadKey();
             _orderRepo.AddOrder(content);
         }
@@ -141,7 +141,7 @@ namespace ConsoleCafe
             Menu menuObject = _orderRepo.FindOrderByID(numRemove);
             _orderRepo.RemoveOrder(menuObject);
 
-            Console.WriteLine("\n" + "Order Successfully Removed.\n" + "\n" + "Press The ENTER Key To Continue...");
+            Console.WriteLine("\n" + "Order Successfully Removed.\n" + "\n" + "Press The ENTER Key To Continue.");
             Console.ReadKey();
         }
         public void SeedContent()
