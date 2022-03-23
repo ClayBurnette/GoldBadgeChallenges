@@ -22,7 +22,7 @@ namespace ConsoleCafe
             {
                 Console.Clear();
                 Console.WriteLine("The Komodo Cafe Console App.\n" +
-                    "\n" + 
+                    "\n" +
                     "Please Enter A Number From The List Below To Start Navigating The Menu.\n" +
                     "\n" +
                     "1. Items On The Menu. . . \n" +
@@ -33,7 +33,7 @@ namespace ConsoleCafe
                 switch (userInput)
                 {
                     case "1":
-                        ListAllOrders();                     
+                        ListAllOrders();
                         break;
                     case "2":
                         CreateOrder();
@@ -131,7 +131,7 @@ namespace ConsoleCafe
             Console.Clear();
             Console.WriteLine("Which Order Would You Like To Remove?\n" +
                 "(Select The Item Using Its Associated Number)" + "\n");
-            
+
             List<Menu> ItemList = _orderRepo.ListOrders();
             foreach (Menu order in ItemList)
             {
