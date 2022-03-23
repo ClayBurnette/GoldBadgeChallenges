@@ -105,7 +105,7 @@ namespace ConsoleCafe
             content.Ingredients = Console.ReadLine();
 
             Console.Clear();
-            Console.WriteLine($"Enter The New Price Of The {content.Name}:" + $" Example $2.00");
+            Console.WriteLine($"Enter The New Price Of The {content.Name}:");
             content.Price = decimal.Parse(Console.ReadLine());
             Console.WriteLine(" ");
 

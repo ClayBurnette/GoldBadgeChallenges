@@ -40,7 +40,7 @@ namespace TestCafe
             Assert.AreEqual("Chicken Soup", neworder.Name);
             Assert.AreEqual("A Delightful Soup", neworder.Desc);
             Assert.AreEqual("Chicken Noodles, Broth", neworder.Ingredients);
-            Assert.AreEqual("$3.50", neworder.Price);
+            Assert.AreEqual(3.50m, neworder.Price);
 
             Menu neworder2 = new Menu(1, "Stew", "Hot & Spicy", "Tofu, Broth", 5.00m);
 
@@ -48,7 +48,7 @@ namespace TestCafe
             Assert.AreEqual("Stew", neworder2.Name);
             Assert.AreEqual("Hot & Spicy", neworder2.Desc);
             Assert.AreEqual("Tofu, Broth", neworder2.Ingredients);
-            Assert.AreEqual("$5.00", neworder2.Price);
+            Assert.AreEqual(5.00m, neworder2.Price);
         }
     }
 }
