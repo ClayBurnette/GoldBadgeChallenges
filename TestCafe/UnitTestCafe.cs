@@ -37,9 +37,9 @@ namespace TestCafe
             Menu neworder = new Menu(1, "Chicken Soup", "A Delightful Soup", "Chicken Noodles, Broth", "$3.50");
 
             Assert.AreEqual(1, neworder.ItemNumber);
-            Assert.AreEqual("Cheeseburger", neworder.Name);
-            Assert.AreEqual("Plain old burger", neworder.Desc);
-            Assert.AreEqual("2 buns, 1 patty", neworder.Ingredients);
+            Assert.AreEqual("Chicken Soup", neworder.Name);
+            Assert.AreEqual("A Delightful Soup", neworder.Desc);
+            Assert.AreEqual("Chicken Noodles, Broth", neworder.Ingredients);
             Assert.AreEqual("$3.50", neworder.Price);
         }
     }

@@ -124,7 +124,6 @@ namespace ConsoleCafe
             Console.WriteLine("Order Successfully Added To The Menu.\n" + "\n" +
                 "Press The ENTER Key To Continue...");
             Console.ReadKey();
-
             _orderRepo.AddOrder(content);
         }
         public void RemoveOrderFromList()
@@ -143,7 +142,6 @@ namespace ConsoleCafe
             _orderRepo.RemoveOrder(menuObject);
 
             Console.WriteLine("\n" + "Order Successfully Removed.\n" + "\n" + "Press The ENTER Key To Continue...");
-
             Console.ReadKey();
         }
         public void SeedContent()
