@@ -6,10 +6,19 @@ using System.Threading.Tasks;
 
 namespace RepoBadges
 {
-    internal class Badges
+    public class Badges
     {
-        static void Main(string[] args)
+        public Badges() { }
+        public int BadgeID { get; set; }
+        public List<string> DoorAccess { get; set; }
+        public Badges(int id)
         {
+            BadgeID = id;
+        }
+        public Badges(int badgeid, List<string> doorAccess)
+        {
+            BadgeID = badgeid;
+            DoorAccess = doorAccess;
         }
     }
 }

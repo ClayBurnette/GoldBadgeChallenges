@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleBadges
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            ProgramUI program = new ProgramUI();
+            program.Run();
         }
     }
 }
