@@ -9,12 +9,12 @@ namespace RepoBadges
     public class Repository
     {
         private static void Main() { }
-        private readonly Dictionary<int, List<string>> _doorAccess = new Dictionary<int, List<string>>(); // New up dictonary
-        public Dictionary<int, List<string>> GetDictonary() //Get List
+        private readonly Dictionary<int, List<string>> _doorAccess = new Dictionary<int, List<string>>(); // New Dictonary
+        public Dictionary<int, List<string>> GetDictonary() 
         {
             return _doorAccess;
         }
-        public void AddBadge(Badges badge) //Create a dictionary of badges
+        public void AddBadge(Badges badge) 
         {
             _doorAccess.Add(badge.BadgeID, badge.DoorAccess);
         }
@@ -38,12 +38,12 @@ namespace RepoBadges
             }
             return null;
         }
-        public void GiveAccess(int badgeid, string doorAccess) // Adds a door to a badge
+        public void GiveAccess(int badgeid, string doorAccess) // Adds A Door
         {
             List<string> doors = _doorAccess[badgeid];
             doors.Add(doorAccess);
         }
-        public void RemoveAccess(int badgeid, string doorAccess) // Remove a door from a badge
+        public void RemoveAccess(int badgeid, string doorAccess) // Remove A Door
         {
             List<string> doors = _doorAccess[badgeid];
             doors.Remove(doorAccess);
