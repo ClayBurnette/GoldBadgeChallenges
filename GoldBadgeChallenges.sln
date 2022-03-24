@@ -3,23 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClaims", "ConsoleClaims\ConsoleClaims.csproj", "{7DD6151C-F0BA-4412-891B-58FC0095AAEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Claims.Console", "ConsoleClaims\Claims.Console.csproj", "{7DD6151C-F0BA-4412-891B-58FC0095AAEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBadges", "ConsoleBadges\ConsoleBadges.csproj", "{183C44F9-EDF9-4F43-B62C-EA3EC29309A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Badges.Console", "ConsoleBadges\Badges.Console.csproj", "{183C44F9-EDF9-4F43-B62C-EA3EC29309A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCafe", "ConsoleCafe\ConsoleCafe.csproj", "{35C38A2B-76EB-4978-91A5-F6161E747CF9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cafe.Console", "ConsoleCafe\Cafe.Console.csproj", "{35C38A2B-76EB-4978-91A5-F6161E747CF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoCafe", "RepoCafe\RepoCafe.csproj", "{6280FC68-DD06-42D7-9BAB-DD9A652BE53A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cafe.Repository", "RepoCafe\Cafe.Repository.csproj", "{6280FC68-DD06-42D7-9BAB-DD9A652BE53A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoClaims", "RepoClaims\RepoClaims.csproj", "{024CF860-11C4-41F7-8A88-B0ADB032DFDF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Claims.Repository", "RepoClaims\Claims.Repository.csproj", "{024CF860-11C4-41F7-8A88-B0ADB032DFDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoBadges", "RepoBadges\RepoBadges.csproj", "{AF6F86BB-1416-4FF3-91C8-5E9E991EE9D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Badges.Repository", "RepoBadges\Badges.Repository.csproj", "{AF6F86BB-1416-4FF3-91C8-5E9E991EE9D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClaims", "TestClaims\TestClaims.csproj", "{374A829B-2CB1-49CB-ACA7-4071DA760B4F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Claims.Test", "TestClaims\Claims.Test.csproj", "{374A829B-2CB1-49CB-ACA7-4071DA760B4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBadges", "TestBadges\TestBadges.csproj", "{628925B1-9478-4A4F-813A-F24B36F7A519}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Badges.Tests", "TestBadges\Badges.Tests.csproj", "{628925B1-9478-4A4F-813A-F24B36F7A519}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCafe", "TestCafe\TestCafe.csproj", "{675DB7D3-F472-463F-8D5D-ADADD8E788EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cafe.Tests", "TestCafe\Cafe.Tests.csproj", "{675DB7D3-F472-463F-8D5D-ADADD8E788EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

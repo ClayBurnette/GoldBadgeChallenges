@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{675DB7D3-F472-463F-8D5D-ADADD8E788EB}</ProjectGuid>
+    <ProjectGuid>{374A829B-2CB1-49CB-ACA7-4071DA760B4F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestCafe</RootNamespace>
-    <AssemblyName>TestCafe</AssemblyName>
+    <RootNamespace>TestClaims</RootNamespace>
+    <AssemblyName>TestClaims</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,16 +49,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTestCafe.cs" />
+    <Compile Include="UnitTestClaims.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RepoCafe\RepoCafe.csproj">
-      <Project>{6280FC68-DD06-42D7-9BAB-DD9A652BE53A}</Project>
-      <Name>RepoCafe</Name>
+    <ProjectReference Include="..\RepoClaims\Claims.Repository.csproj">
+      <Project>{024CF860-11C4-41F7-8A88-B0ADB032DFDF}</Project>
+      <Name>Claims.Repository</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

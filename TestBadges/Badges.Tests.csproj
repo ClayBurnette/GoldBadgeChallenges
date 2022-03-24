@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{374A829B-2CB1-49CB-ACA7-4071DA760B4F}</ProjectGuid>
+    <ProjectGuid>{628925B1-9478-4A4F-813A-F24B36F7A519}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestClaims</RootNamespace>
-    <AssemblyName>TestClaims</AssemblyName>
+    <RootNamespace>TestBadges</RootNamespace>
+    <AssemblyName>TestBadges</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,16 +49,20 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTestClaims.cs" />
+    <Compile Include="UnitTestBadges.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RepoClaims\RepoClaims.csproj">
-      <Project>{024CF860-11C4-41F7-8A88-B0ADB032DFDF}</Project>
-      <Name>RepoClaims</Name>
+    <ProjectReference Include="..\ConsoleBadges\Badges.Console.csproj">
+      <Project>{183C44F9-EDF9-4F43-B62C-EA3EC29309A8}</Project>
+      <Name>Badges.Console</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RepoBadges\Badges.Repository.csproj">
+      <Project>{AF6F86BB-1416-4FF3-91C8-5E9E991EE9D5}</Project>
+      <Name>Badges.Repository</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
