@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1AD9451A-2B85-4364-A625-E5E4E1251F63}</ProjectGuid>
+    <ProjectGuid>{E4972D76-135C-4D8B-B661-78D60084E28A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Console.Outings</RootNamespace>
-    <AssemblyName>Console.Outings</AssemblyName>
+    <RootNamespace>OutingsConsole</RootNamespace>
+    <AssemblyName>OutingsConsole</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -49,6 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RepoOutings\Outings.Repo.csproj">
+      <Project>{9C285231-B1BF-4C9F-A81D-00D4BBA5B505}</Project>
+      <Name>Outings.Repo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
