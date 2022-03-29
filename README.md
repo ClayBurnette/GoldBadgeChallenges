@@ -1,4 +1,4 @@
-# Three Console Apps 
+# Console Apps 
 
 C# Console Application Challenges
 
@@ -163,5 +163,29 @@ Menu
 Out of scope:
 You do not need to consider tying an individual badge to a particular user. Just the Badge # will do.
 
+Be sure to Unit Test your Repository methods.
+```
+## 04: Company Outings
+```
+﻿Komodo accountants need a list of all outings, the cost of all outings combined, and the cost of all types of outings combined.
+
+Here are the parts of an outing:
+
+Event Type:   Golf, Bowling, Amusement Park, Concert
+Number of people that attended
+Date
+Total cost per person for the event
+Total cost for the event
+ 
+
+Here's what they'd like:
+
+1. Display a list of all outings.
+2. Add individual outings to a list(don't need to worry about delete yet)
+3. Calculations:
+	They'd like to see a display for the combined cost for all outings.
+	They'd like to see a display of outing costs by type.
+	For example, all bowling outings for the year were $2000.00. All Concert outings cost $5000.00.
+	
 Be sure to Unit Test your Repository methods.
 ```
