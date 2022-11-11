@@ -23,9 +23,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cafe.Tests", "TestCafe\Cafe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outings.Repo", "RepoOutings\Outings.Repo.csproj", "{9C285231-B1BF-4C9F-A81D-00D4BBA5B505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outings.Test", "OutingsTest\Outings.Test.csproj", "{C8619A20-7D76-4D46-B0E6-469835A3D7E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outings.Test", "TestOutings\Outings.Test.csproj", "{C8619A20-7D76-4D46-B0E6-469835A3D7E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outings.Console", "OutingsConsole\Outings.Console.csproj", "{E4972D76-135C-4D8B-B661-78D60084E28A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outings.Console", "ConsoleOutings\Outings.Console.csproj", "{E4972D76-135C-4D8B-B661-78D60084E28A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

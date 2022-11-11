@@ -152,35 +152,17 @@ namespace Company_Outings
         public void CalculateTotalCostsPerType()
         {
             Console.Clear();
-            Console.WriteLine("1) Golf\n" +
+            Console.WriteLine(
+                "1) Golf\n" +
                 "2) Bowling\n" +
                 "3) Amusement Park\n" +
-                "4) Concert");
-            TypeOfEvent type = TypeOfEvent.Golf;
-            decimal totalCostPerEvent = _outingsRepo.TotalOutingCostsPerType(type);
-            switch (Console.ReadLine())
-            {
-                case "1":
-                    type = TypeOfEvent.Golf;
-                    Console.WriteLine($"Total Cost For Golf Events ${totalCostPerEvent}");
-                    Console.ReadLine();
-                    break;
-                case "2":
-                    type = TypeOfEvent.Bowling;
-                    Console.WriteLine($"Total Cost For Bowling Events ${totalCostPerEvent}");
-                    Console.ReadLine();
-                    break;
-                case "3":
-                    type = TypeOfEvent.AmusementPark;
-                    Console.WriteLine($"Total Cost For Amusement Park Events ${totalCostPerEvent}");
-                    Console.ReadLine();
-                    break;
-                case "4":
-                    type = TypeOfEvent.Concert;
-                    Console.WriteLine($"Total Cost For Concert Events ${totalCostPerEvent}");
-                    Console.ReadLine();
-                    break;
-            }
+                "4) Concert\n");
+            string type = Console.ReadLine();
+            int outingTypeToInt = Convert.ToInt32(type);
+            decimal totalCostPerEvent = _outingsRepo.TotalOutingCostsPerType((TypeOfEvent)outingTypeToInt);
+            Console.WriteLine($"The Total Cost For This Event Is ${totalCostPerEvent}");
+            Console.WriteLine("Press ENTER To Continue.");
+            Console.ReadLine();
         }
         public void SeedContent()
         {
